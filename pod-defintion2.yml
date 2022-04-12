@@ -1,20 +1,21 @@
 ---
 apiVersion: v1
 kind: Pod
-metadata: 
- name: postgress-Pod
+metadata:
+ name: postgre-Pod
  labels:
   type: db
   authour: intelliqit
-spec:
+spec: 
  containers:
   - name: mydb
-    image: postgress
-    env: 
-     - name: POSTGRES_PASSWORD
+    image: postgres
+    env:
+     - name: POSTGRES_ PASSWORD
        value: intelliqit
      - name: POSTGRES_USER
        value: myuser
      - name: POSTGRES_DB
        value: mydb
+
 ...
